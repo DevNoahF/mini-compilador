@@ -159,7 +159,7 @@ Marília
 
 # Tabela 9 — KEYWORD\_EXT
 
-| Classe 8 | KEYWORD\_EXT  |
+| Classe 9 | KEYWORD\_EXT  |
 | :---- | :---- |
 | **Nome da classe** | KEYWORD\_EXT  |
 | **Descrição** | Conjunto finito de palavras reservadas "estendidas": controlam fluxo de execução (condicionais, laços, retorno), em vez de declarar tipo/E-S como em KEYWORD\_CORE. Mesmo mecanismo de reconhecimento de KEYWORD\_CORE, só muda o conjunto enumerado.  |
@@ -177,7 +177,7 @@ Marília
 
 # Tabela 10 — REL\_OP
 
-| Classe 8 |  |
+| Classe 10 |  |
 | :---- | :---- |
 | **Nome da classe** | REL\_OP |
 | **Descrição** | Operadores relacionais utilizados para realizar comparações lógicas no código  |
@@ -194,7 +194,7 @@ Marília
 
 # Tabela 11 — BLOCK\_DELIMITER
 
-| Classe 8 | BLOCK\_DELIMITER  |
+| Classe 11 | BLOCK\_DELIMITER  |
 | :---- | :---- |
 | **Nome da classe** | BLOCK\_DELIMITER |
 | **Descrição** | Chaves usadas como delimitadores para agrupar e separar blocos de código na extensão |
