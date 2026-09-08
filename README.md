@@ -11,6 +11,23 @@ Joaquim Pedro Augusto de Oliveira \- 1993926
 Marília  
 04/09/2026
 
+## Tabela geral das classes
+
+| Classe | Finalidade |
+|---|---|
+| `KEYWORD_CORE` | Palavras-chave principais da linguagem |
+| `IDENT_BASE` | Identificadores básicos |
+| `INT_LITERAL` | Literais inteiros |
+| `ASSIGN` | Operador de atribuição |
+| `ARITH_OP` | Operadores aritméticos |
+| `DELIMITER_CORE` | Delimitadores básicos |
+| `LINE_COMMENT` | Comentários de linha |
+| `WHITESPACE` | Espaços em branco |
+| `KEYWORD_EXT` | Palavras-chave de extensão |
+| `REL_OP` | Operadores relacionais |
+| `BLOCK_DELIMITER` | Delimitadores de bloco |
+
+
 # Tabela 1 — IDENT\_BASE
 
 | Classe 1 |  |
