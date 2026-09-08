@@ -49,7 +49,7 @@ Marília
 | Classe 2 |  |
 | :---- | :---- |
 | **Nome da classe** | INT\_LITERAL |
-| **Descrição** | Classe responsável por lidar com inteiros literais, não aceita números flutuantes(exemplo 0.1), aceita qualquer escopo de valor desde valores negativos até positivos |
+| **Descrição** | Classe responsável por lidar com inteiros literais, não aceita números flutuantes(exemplo 0.1)|
 | **Exemplos aceitos** | 0, 001, 2s, 34,9 |
 | **Definição Matemática** | Dígito \= {0, 1, 2, ..., 9}  LIntLiteral \= { s | s \= d₁d₂...dₙ, dᵢ ∈ Dígito para todo i, n ≥ 1 }  |
 | **Conjuntos Auxiliares** | Dígito \= {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}  |
@@ -114,7 +114,7 @@ Marília
 | :---- | :---- |
 | **Nome da classe** | DELIMITER\_CORE  |
 | **Descrição** | Símbolos de pontuação de uso geral: separam argumentos, agrupam expressões e marcam fim de instrução. Não definem blocos de código (isso é BLOCK\_DELIMITER). Cada símbolo é um token de 1 caractere, sem combinação possível entre eles.  |
-| **Exemplos aceitos** | ( , ) , ;  |
+| **Exemplos aceitos** | ( , ) ;  |
 | **Definição Matemática** | RDelimCore \= { "(", ")", ";" }  |
 | **Conjuntos Auxiliares** | Nenhum  enumeração direta de símbolos  |
 | **Expressão Regular Formal** | rDelimCore \= "(" | ")" | ";"  |
@@ -163,7 +163,7 @@ Marília
 | :---- | :---- |
 | **Nome da classe** | KEYWORD\_EXT  |
 | **Descrição** | Conjunto finito de palavras reservadas "estendidas": controlam fluxo de execução (condicionais, laços, retorno), em vez de declarar tipo/E-S como em KEYWORD\_CORE. Mesmo mecanismo de reconhecimento de KEYWORD\_CORE, só muda o conjunto enumerado.  |
-| **Exemplos aceitos** | if, else, while, return  |
+| **Exemplos aceitos** | if, else, while  |
 | **Definição Matemática** | RExt \= { "if", "else", "while" }  |
 | **Conjuntos Auxiliares** | Nenhum enumeração direta, igual a KEYWORD\_CORE  |
 | **Expressão Regular Formal** | rKeywordExt \= "if" | "else" | "while" | "return"  |
@@ -188,7 +188,7 @@ Marília
 | **Regex Python** | r"==|\!=|\<=|\>=|\<|\>"  |
 | **Ação Futura** | Emitir o token REL\_OP correspondente ao operador reconhecido  |
 | **Testes aceitos** | \== (Igualdade) \!= (diferença) |
-| **Testes Rejeitados** | \>= (Ordem invertida dos símbolos, não corresponde a nenhum operador da linguagem) |
+| **Testes Rejeitados** | \=> (Ordem invertida dos símbolos, não corresponde a nenhum operador da linguagem) |
 | **Testes Fronteira** | \= (Pertence a classe ASSIGN), ‘’ (não contém palavra vazia) |
 
 
